@@ -84,7 +84,7 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-   body {
+body{
     display: flex;
     text-align: center;
     align-items: center;
@@ -116,12 +116,22 @@ justify-content: flex-start;
     border: 2px solid #333;
 }
 
-.face:nth-child(1) { transform: rotateY(0deg) translateZ(50px); }
-.face:nth-child(2) { transform: rotateY(90deg) translateZ(50px); }
-.face:nth-child(3) { transform: rotateY(180deg) translateZ(50px); }
-.face:nth-child(4) { transform: rotateY(-90deg) translateZ(50px); }
-.face:nth-child(5) { transform: rotateX(90deg) translateZ(50px); }
-.face:nth-child(6) { transform: rotateX(-90deg) translateZ(50px); }
+.face:nth-child(1) { 
+  transform: rotateY(0deg) translateZ(50px); 
+   background-color: yellow;
+}
+.face:nth-child(2) { 
+  transform: rotateY(90deg) translateZ(50px);
+  background-color: blueviolet; 
+}
+.face:nth-child(3) { transform: rotateY(180deg) translateZ(50px); 
+background-color: darkorange;}
+.face:nth-child(4) { transform: rotateY(-90deg) translateZ(50px); 
+background-color: green;}
+.face:nth-child(5) { transform: rotateX(90deg) translateZ(50px);
+background-color:crimson }
+.face:nth-child(6) { transform: rotateX(-90deg) translateZ(50px);
+background-color: darkslateblue; }
 
 @keyframes rotate {
     from { transform: rotateX(0) rotateY(0); }

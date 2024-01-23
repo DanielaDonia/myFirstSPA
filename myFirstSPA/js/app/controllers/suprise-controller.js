@@ -15,7 +15,7 @@ define(['views/suprise-view'], function(supriseView){
                     console.log("click");
                     console.log(supriseView.renderRubik);
                    
-                        supriseView.renderRubik();
+                        supriseView.renderCreateRubik();
                         console.log("click2");
                 };
        

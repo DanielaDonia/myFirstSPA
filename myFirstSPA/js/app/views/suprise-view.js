@@ -7,9 +7,11 @@ define(function(){
     
     var externals={};
 
+/*
     internals.createSupriseButton = function(){
         return '<button class="suprise"><strong>Click me for a suprise...</strong></button>';
     };
+    */
 
     internals.createRubik = function(){
         return '<div class="rubik-cube">' +
@@ -22,6 +24,7 @@ define(function(){
         '</div>';
     };
 
+    /*
  internals.renderSupriseButton = function(){
         if(internals.elements.button){
             return;
@@ -30,14 +33,17 @@ define(function(){
         internals.elements.button = $(internals.createSupriseButton());
         internals.elements.button.click(internals.handlers['button']);
         internals.elements.app.append(internals.elements.button);
+        internals.elements.createSupriseButton = true;
     };
+    */
 
-    internals.renderRubik = function(){
+    internals.renderCreateRubik = function(){
+    
         if(internals.elements.createRubik){
             internals.elements.createRubik.remove();
         }
 
-        internals.elements.createRubik = $(internals.createRubik);
+        internals.elements.createRubik = $(internals.createRubik());
         internals.elements.app.append(internals.elements.createRubik);
     };
    
@@ -48,8 +54,8 @@ define(function(){
 
     externals.render = function () {
         internals.elements.app = $('#app');
-        internals.renderSupriseButton();
-        internals.renderRubik();
+        //internals.renderSupriseButton();
+        internals.renderCreateRubik();
     }
 
     return externals;
